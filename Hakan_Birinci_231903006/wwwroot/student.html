@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Öğrenci Paneli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar bg-dark text-white">
+            <div class="sidebar-header">
+                <h4> Öğrenci</h4>
+            </div>
+            <nav class="nav flex-column sidebar-nav">
+                <a href="#" class="nav-link text-white" data-page="overview">Zimmetli Bilgisayarım</a>
+            </nav>
+            <button id="logoutButton" class="btn btn-outline-light mt-auto mb-3">Çıkış Yap</button>
+        </aside>
+        <main class="content p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2>Öğrenci Paneli</h2>
+                    <p class="text-muted">Sadece sana atanan bilgisayarın bilgilerini gör.</p>
+                </div>
+                <div id="currentUser" class="text-end text-secondary"></div>
+            </div>
+            <div id="pageContent"></div>
+        </main>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/student.js"></script>
+</body>
+</html>
